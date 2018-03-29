@@ -12,7 +12,7 @@ class EmailParser
   
   def parse 
    parsed = @emails.scan(/\w+@+\w+\.+\w\w\w/)
-  
+  parsed.uniq
   end
   
 end
