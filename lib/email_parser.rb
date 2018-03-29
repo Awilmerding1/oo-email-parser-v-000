@@ -11,7 +11,8 @@ class EmailParser
   end
   
   def parse 
-    @emails.scan(/\w+@+\w+\.+\w\w\w/)
+   parsed = @emails.scan(/\w+@+\w+\.+\w\w\w/)
+  
   end
   
 end
